@@ -32,6 +32,7 @@ const News = (props) => {
   useEffect(() => {
     document.title = `${capilatizeFirstLetter(props.category)} - NewsMagnet`;
     updateNews();
+    // eslint-disable-next-line
   }, []);
 
   const fetchMoreData = async () => {
